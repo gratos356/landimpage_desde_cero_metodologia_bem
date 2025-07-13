@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color_principal:rgb(255, 255, 255);
+    --color_descripcion: linear-gradient(to top, rgba(0, 0, 0, 0.776), rgba(230, 230, 230, 0.251));
+    --color_principal_gradiente:rgba(0, 0, 0, 0.902);
+    --color_secundario_gradiente:rgb(0, 0, 0);
+    --color_fondo_menu_nav:rgb(225, 225, 225);  
+    --color_fooder:rgb(169, 169, 169);
+}
+.header{
+    background-color: var(--color_principal);
+    height: 150px;
+    
+}
+.header div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.logo{
+    /* background-color: yellow; */
+    height: 50px;
+    margin-top: 50px;
+    width: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+.logo i{
+    transform: rotate(-90deg);
+    font-size: 2.5rem;
+    line-height: 50px;
+    transition: 1s;
+}
+.logo i:hover{
+        transform: rotate(90deg);
+        color: red;
+}
+.logo h1{
+    font-size: .6rem;
+}
+
+.botones{
+    background-color: var(--color_fondo_menu_nav);
+    height: 50px;
+    margin-top: 50px;
+    width: 1076px;
+    margin-left: 100px;
+    padding-left: 50px;
+}
+.botones button{
+    width: 157px;
+    height: 30px;
+    margin-top:10px;    
+    background: none;
+    background-color: rgb(206, 206, 206);
+    /* border: .1px black solid; */
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-left: 30px;
+}
+.botones button:hover{
+    background-color: rgb(128, 128, 128);
+    transform: scale3d(1.03, 1.03, 1.03);
+}
+
+.content{
+    /* background-color: blue; */
+    height: 400px;
+}
+.content div{
+    display: inline-block;
+    vertical-align: top;
+}
+.imagen{
+    background-image:linear-gradient(45deg, var(--color_principal_gradiente),var(--color_secundario_gradiente)), url(recursos/img/imagen_prototipo.png) ;
+    height: 400px;
+    width: 50%;
+}
+.descripcion{
+    background: var(--color_descripcion);
+    height: 400px;
+    width: 50%;
+    margin-left: -4px;
+    padding: 30px;
+}
+.descripcion p{
+    font-size: 2rem;
+    filter: blur(3px);
+    transition: 1s;
+}
+.descripcion p:hover{
+    filter: blur(0);
+}
+
+.fooder{
+    background-color: var(--color_fooder);
+    height: 43px;
+}
+.fooder i{
+    font-size: 2rem;
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+.fooder i:hover{
+    transform: rotate(90deg);
+}
