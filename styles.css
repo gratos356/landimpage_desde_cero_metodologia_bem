@@ -39,13 +39,13 @@ body{
     text-align: center;
 }
 .logo i{
-    transform: rotate(-90deg);
+    transform: rotate(-360deg);
     font-size: 2.5rem;
     line-height: 50px;
     transition: 1s;
 }
 .logo i:hover{
-        transform: rotate(90deg);
+        transform: rotate(360deg);
         color: var(--color_cambio_logos);
 }
 .logo h1{
@@ -64,7 +64,7 @@ body{
     width: 157px;
     height: 30px;
     margin-top:10px;    
-    background: none;
+    /* background: none;*/
     background-color: rgb(206, 206, 206);
     /* border: .1px black solid; */
     border: none;
@@ -96,14 +96,31 @@ body{
     width: 50%;
     margin-left: -4px;
     padding: 30px;
+    overflow-y:scroll;
+    scrollbar-color: #ffffff #000000;
+    /* scrollbar-width:none; */
 }
 .descripcion p{
-    font-size: 2rem;
+    font-size: 3rem;
     filter: blur(3px);
     transition: 1s;
 }
 .descripcion p:hover{
     filter: blur(0);
+}
+.descripcion button{
+    width: 157px;
+    height: 30px;
+    background-color: rgb(163, 163, 163);
+    /* border: .1px black solid; */
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-left: 190px;
+}
+.descripcion button:hover{
+    background-color: var(--color_botones);
+    transform: scale3d(1.03, 1.03, 1.03);
 }
 
 .fooder{
@@ -112,10 +129,10 @@ body{
 }
 .fooder i{
     font-size: 2rem;
-    transform: rotate(-90deg);
+    transform: rotate(-360deg);
     transition: 1s;
 }
 .fooder i:hover{
-    transform: rotate(90deg);
+    transform: rotate(360deg);
     color: var(--color_cambio_logos);
 }
